@@ -5,10 +5,10 @@ function json_to_ethers(jsonABI){
 
     const ethersABIFormatted = existingInterface.format(ethers.JsonFragment);
 const ethersABIFormattedJson = existingInterface.formatJson(ethers.JsonFragment);
+console.log(ethersABIFormatted)
+// console.log(ethersABIFormattedJson)
 
-console.log("ethersABIFormatted:", ethersABIFormatted);
-console.log("ethersABIFormattedJson:", ethersABIFormattedJson);
-    
+return {ethersABIFormatted,ethersABIFormattedJson}
 }
 
 
